@@ -7,7 +7,7 @@ Read the [note](#paths) about paths and then go to [Running the code](#run).
 ## Reference: ##
 
 This project is to speed up the training process of softmax regression, the file name and classes in this project is the name
-as spam-filter.
+as mnist.
 
 ## Description: ##
 
