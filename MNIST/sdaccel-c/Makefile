@@ -11,7 +11,7 @@ UTILS_DIR = src/
 
 HEADERS := $(HARNESS_DIR)/CLKernel.h \
 			$(HARNESS_DIR)/CLMemObj.h \
-			src/AltThreeKernel.h \
+			src/SdaccelSgd.h \
 			$(UTILS_DIR)/fileio.hpp \
 			$(UTILS_DIR)/defs.h \
 			$(UTILS_DIR)/utils.hpp
@@ -19,7 +19,7 @@ HEADERS := $(HARNESS_DIR)/CLKernel.h \
 SOURCES := src/main_sdaccel.cpp \
 			$(HARNESS_DIR)/CLKernel.cpp \
 			$(HARNESS_DIR)/CLMemObj.cpp \
-			src/AltThreeKernel.cpp \
+			src/SdaccelSgd.cpp \
 			$(UTILS_DIR)/utils.cpp
 
 sw_emulation: $(SW_EMUL_TCL) $(ALL_DEPS)

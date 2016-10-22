@@ -5,20 +5,20 @@ add_device -vbnv xilinx:adm-pcie-7v3:1ddr:2.1
 add_files "src/main_sdaccel.cpp"
 add_files "src/harness/sdaccel/CLKernel.cpp"
 add_files "src/harness/sdaccel/CLMemObj.cpp"
-add_files "src/AltThreeKernel.cpp"
+add_files "src/SdaccelSgd.cpp"
 add_files "src/utils.cpp"
 
 # Header files
 add_files "src/harness/sdaccel/CLKernel.h"
 add_files "src/harness/sdaccel/CLMemObj.h"
-add_files "src/AltThreeKernel.h"
+add_files "src/SdaccelSgd.h"
 add_files "src/fileio.hpp"
 add_files "src/defs.h"
 add_files "src/utils.hpp"
 
 set_property file_type "c header files" [get_files "src/harness/sdaccel/CLKernel.h"]
 set_property file_type "c header files" [get_files "src/harness/sdaccel/CLMemObj.h"]
-set_property file_type "c header files" [get_files "src/AltThreeKernel.h"]
+set_property file_type "c header files" [get_files "src/SdaccelSgd.h"]
 set_property file_type "c header files" [get_files "src/fileio.hpp"]
 set_property file_type "c header files" [get_files "src/defs.h"]
 set_property file_type "c header files" [get_files "src/utils.hpp"]

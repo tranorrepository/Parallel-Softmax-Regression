@@ -8,7 +8,7 @@
 #include "fileio.hpp"
 #include "defs.h"
 #include "utils.hpp"
-#include "AltThreeKernel.h"
+#include "SdaccelSgd.h"
 
 static void print_usage(void)
 {
@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
         parameter_vector[i] = 0.5;
 
     /**************************HARNESS STUFF***********************************/
-    AltThreeKernel spamfilter_kernel (kernelFile.c_str(), kernelName.c_str(),
+    SdaccelSgd spamfilter_kernel (kernelFile.c_str(), kernelName.c_str(),
         deviceType, data_points, labels, parameter_vector);
     fflush(stdout);
 
